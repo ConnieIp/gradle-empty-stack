@@ -15,4 +15,9 @@ public class Person {
         this.mobile = mobile;
     }
 
+    public void call(){
+        System.out.print(this.name + " call ");
+        mobile.printBasicInformation();
+    }
+
 }

@@ -11,22 +11,27 @@ public class App {
         mobile.printMsg("__I am a mobile__");
         mobile.printBasicInformation();
 
+        System.out.println("---------------");
         Mobile iphone = new IPhone("Iphone","white", "Apple");
         iphone.printMsg("__I am a iphone__");
         iphone.printBasicInformation();
         iphone.printMsg("__I am a iphone__"+" a very long msg");
 
+        System.out.println("---------------");
         Mobile andriod = new Andriod("Andriod","black", "Samsung");
         andriod.printMsg("__I am a andriod__");
         andriod.printBasicInformation();
         andriod.printMsg("__I am a andriod__"+" a very long msg");
 
+        System.out.println("---------------");
         Person person = new Person("Person",iphone);
+        person.call();
         person.setMobile(andriod);
-        person.getMobile().printBasicInformation();
+        person.call();
 
+        System.out.println("---------------");
         IphoneRobot iphoneRobot = new IphoneRobot("IphoneRobot",(IPhone)iphone);
-        iphoneRobot.getIphone().printBasicInformation();
+        iphoneRobot.call();
     }
 }
 

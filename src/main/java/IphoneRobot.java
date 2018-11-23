@@ -14,4 +14,9 @@ public class IphoneRobot {
     public void setIphone(IPhone iphone) {
         this.iphone = iphone;
     }
+
+    public void call(){
+        System.out.print(this.name + " call ");
+        iphone.printBasicInformation();
+    }
 }
