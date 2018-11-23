@@ -7,6 +7,26 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Mobile mobile = new Mobile("Mobile","color", "brand");
+        mobile.printMsg("__I am a mobile__");
+        mobile.printBasicInformation();
+
+        Mobile iphone = new IPhone("Iphone","white", "Apple");
+        iphone.printMsg("__I am a iphone__");
+        iphone.printBasicInformation();
+        iphone.printMsg("__I am a iphone__"+" a very long msg");
+
+        Mobile andriod = new Andriod("Andriod","black", "Samsung");
+        andriod.printMsg("__I am a andriod__");
+        andriod.printBasicInformation();
+        andriod.printMsg("__I am a andriod__"+" a very long msg");
+
+        Person person = new Person("Person",iphone);
+        person.setMobile(andriod);
+
+        IphoneRobot iphoneRobot = new IphoneRobot("IphoneRobot",(IPhone)iphone);
+
     }
 }
+
+
