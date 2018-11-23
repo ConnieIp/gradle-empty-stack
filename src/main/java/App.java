@@ -23,9 +23,10 @@ public class App {
 
         Person person = new Person("Person",iphone);
         person.setMobile(andriod);
+        person.getMobile().printBasicInformation();
 
         IphoneRobot iphoneRobot = new IphoneRobot("IphoneRobot",(IPhone)iphone);
-
+        iphoneRobot.getIphone().printBasicInformation();
     }
 }
 

@@ -6,4 +6,12 @@ public class IphoneRobot {
         this.name = name;
         this.iphone = iphone;
     }
+
+    public IPhone getIphone() {
+        return iphone;
+    }
+
+    public void setIphone(IPhone iphone) {
+        this.iphone = iphone;
+    }
 }
